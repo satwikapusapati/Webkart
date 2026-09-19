@@ -1,28 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="products.css" />
 </head>
+
 <body>
-     <header class="nav-bar">
-        <a href="home.html" class="logo"> Web <span>Kart</span></a>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <a href="home.html" class="logo">🛒 Web<span>Kart</span></a>
         <nav>
-            <a href="home.html">home</a>
-            <a href="products.html">products</a>
-            <a href="reviews.html">reviews</a>
-            <a href="contacts.html">contact</a>
+            <a href="home.html" >Home</a>
+            <a href="products.html" class="active">Products</a>
+          
+            <a href="contacts.html" >Contact</a>
         </nav>
     </header>
+
     <main>
-        <section class="products-headers">
-            <h1>Discover Our Products</h1>
-            <p>Quality Products. Great Prices. Just for You</p>
+        <section class="products-header">
+            <h1>
+                <bold>Discover Our Products</bold>
+            </h1>
+            <p>Quality Products. Great Prices. Just for You.</p>
         </section>
-        <div class="filter">
-            <div classs="Categories">
-                <button>All</button>
+        <div class="filters">
+            <div class="categories">
+                <button class="selected">All</button>
                 <button>Electronics</button>
                 <button>Fashion</button>
                 <button>Beauty</button>
@@ -30,75 +38,63 @@
                 <button>Sports</button>
                 <button>Toys & Kids</button>
             </div>
-            <div class="sort">
-                <label for="">Sort by:</label>
-                <select>
-                    <option>popular</option>
-                    <option>Price:low to high</option>
-                    <option>Price:high to low</option>
-                </select>
 
+            
+                <button class="cart-btn">Add to Cart</button>
             </div>
-        </div>
-        <section class="products-grid">
-             <div class="product-card">
-                <img src="./watch.jpg" alt="watch">
-                <h3>Smart Watch Pro</h3>
-                <div class="rating">*****<span>(120)</span></div>
-                <p>₹2,699<del> ₹3000</del></p>   
-                <button class="cart-btn">Add to Cart</button>
-             </div>
-              <div class="product-card">
-                <img src="./shoes.jpg" alt="shoes">
-                <h3>Classic White Sneakers</h3>
-                <div class="rating">*****<span>(198)</span></div>
-                <p>₹1,499<del> ₹1999</del></p>   
-                <button class="cart-btn">Add to Cart</button>
-             </div>
-              <div class="product-card">
-                <img src="./bag.png" alt="bag">
-                <h3>Travel Backpack</h3>
-                <div class="rating">*****<span>(75)</span></div>
-                <p>₹1,099<del> ₹1499</del></p>   
-                <button class="cart-btn">Add to Cart</button>
-             </div>
-              <div class="product-card">
-                <img src="./headphones.jpeg" alt="headphnes">
-                <h3>Headphones</h3>
-                <div class="rating">*****<span>(150)</span></div>
-                <p>₹1699<del> ₹2199</del></p>   
-                <button class="cart-btn">Add to Cart</button>
-             </div>
-              <div class="product-card">
-                <img src="./sunglasses.jpeg" alt="glasses">
-                <h3>Sun Glasses</h3>
-                <div class="rating">*****<span>(65)</span></div>
-                <p>₹899<del> ₹1199</del></p>   
-                <button class="cart-btn">Add to Cart</button>
-             </div>
-              <div class="product-card">
-                <img src="./jacket.jpeg" alt="denim">
-                <h3>Denim Jacket</h3>
-                <div class="rating">*****<span>(87)</span></div>
-                <p>₹1,999<del> ₹2499</del></p>   
-                <button class="cart-btn">Add to Cart</button>
-             </div>
-              <div class="product-card">
-                <img src="./perfume.jpeg" alt="perfume">
-                <h3>Perfume for men</h3>
-                <div class="rating">*****<span>(110)</span></div>
-                <p>₹1,349<del> ₹1799</del></p>   
-                <button class="cart-btn">Add to Cart</button>
-             </div>
-              <div class="product-card">
-                <img src="./speaker.jpeg" alt="speaker">
-                <h3>Smart Speaker</h3>
-                <div class="rating">*****<span>(92)</span></div>
-                <p>₹2,199<del> ₹2799</del></p>   
-                <button class="cart-btn">Add to Cart</button>
-             </div>
 
+            <div class="product-card">
+                <img src="backpack.jpeg" alt="Travel Backpack" />
+                <h3>Travel Backpack</h3>
+                <div class="rating">★★★★★ <span>(75)</span></div>
+                <p class="price">₹1,099 <del>₹1,499</del></p>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="headphones.jpeg" alt="Wireless Headphones" />
+                <h3>Wireless Headphones</h3>
+                <div class="rating">★★★★★ <span>(150)</span></div>
+                <p class="price">₹1,699 <del>₹2,199</del></p>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="sunglasses.jpeg" alt="Sunglasses" />
+                <h3>Sunglasses</h3>
+                <div class="rating">★★★★★ <span>(65)</span></div>
+                <p class="price">₹899 <del>₹1,199</del></p>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="jacket.jpeg" alt="Denim Jacket" />
+                <h3>Denim Jacket</h3>
+                <div class="rating">★★★★★ <span>(87)</span></div>
+                <p class="price">₹1,999 <del>₹2,499</del></p>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="perfume.jpeg" alt="Perfume" />
+                <h3>Perfume for Men</h3>
+                <div class="rating">★★★★★ <span>(110)</span></div>
+                <p class="price">₹1,349 <del>₹1,799</del></p>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="speaker.jpeg" alt="Smart Speaker" />
+                <h3>Smart Speaker</h3>
+                <div class="rating">★★★★★ <span>(92)</span></div>
+                <p class="price">₹2,199 <del>₹2,799</del></p>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
         </section>
     </main>
+
+
+
 </body>
+
 </html>
